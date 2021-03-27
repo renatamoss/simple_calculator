@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <h1>Simple Calculator</h1>
+        <!--::after-->
+        <h2>by Renata Marques</h2>
+
+        <section class="simple_calculator">
+            <input id="result" size="10" maxlength="10" placeholder="0" />
+            <table class="buttons">
+                <tr>
+                    <td class="button_clean"><button class="button" onclick="clean()">C</button></td>
+                    <td class="button_del"><button class="button" onclick="del()">Del</button></td>
+                    <td><button class="button" onclick="insert('/')">/</button></td>
+                    <td><button class="button" onclick="insert('*')">*</button></td>
+                </tr>
+                <tr>
+                    <td><button class="button" onclick="insert('9')">9</button></td>
+                    <td><button class="button" onclick="insert('8')">8</button></td>
+                    <td><button class="button" onclick="insert('7')">7</button></td>
+                    <td><button class="button" onclick="insert('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="button" onclick="insert('6')">6</button></td>
+                    <td><button class="button" onclick="insert('5')">5</button></td>
+                    <td><button class="button" onclick="insert('4')">4</button></td>
+                    <td><button class="button" onclick="insert('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="button" onclick="insert('3')">3</button></td>
+                    <td><button class="button" onclick="insert('2')">2</button></td>
+                    <td><button class="button" onclick="insert('1')">1</button></td>
+                    <td class="button_calculate" rowspan="2"><button class="button" onclick="calculate('=')">=</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="button_zero" colspan="2"> <button class="button" onclick="insert('0')">0</button></td>
+                    <td><button class="button" onclick="insert('.')">.</button></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <script text="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>

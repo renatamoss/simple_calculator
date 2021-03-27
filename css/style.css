@@ -1,0 +1,138 @@
+* {
+    font-family: 'Rajdhani', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: #FFFEFF;
+    height: 100vh;
+    position: relative;
+    padding: 30px;
+}
+
+h1 {
+    color: #c43649;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+h2::after {
+    content: "";
+    border-top: 2px solid #333;
+    left: 42.5%;
+    position: absolute;
+    top: 195x;
+    width: 15%;
+}
+
+.simple_calculator {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #EC6C20;
+    border: 5px solid #ccc;
+    border-color: #ccc #999 #999 #ccc;
+    border-radius: 25px;
+    max-width: 366px;
+    margin: 10px 0;
+    padding: 20px;
+}
+
+#result {
+    background: white;
+    border: 5px solid #ccc;
+    border-color: #999 #ccc #ccc #999;
+    border-radius: 10px;
+    font-size: 3rem;
+    margin: 5px;
+    padding: 10px;
+    text-align: right;
+    width: 89%;
+}
+
+.button {
+    background-color: #3CB5B5;
+    color: black;
+    border: 5px solid #ccc;
+    border-color: #ccc #999 #999 #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+    height: 60px;
+    margin: 5px;
+    outline: none;
+    transition: 0.5s ease;
+    width: 80px;
+}
+
+.button:hover {
+    background-color: #3a999c;
+}
+
+.buttons tr .button_clean .button:nth-child(odd),
+.buttons tr .button_del .button:nth-child(odd) {
+    background-color: #E53B51;
+}
+
+.buttons tr .button_clean .button:nth-child(odd):hover {
+    background-color: #b33243;
+}
+.buttons tr .button_del .button:nth-child(odd):hover {
+    background-color: #b33243;
+}
+
+.buttons tr .button_calculate .button:nth-child(odd) {
+    background-color: #B8DC3C;
+}
+
+.buttons tr .button_calculate .button:nth-child(odd):hover {
+    background-color: #99b833;
+}
+
+.button_calculate .button {
+    height: 132px;
+}
+
+.button_zero .button {
+    width: 170px;
+}
+
+/*Responsive*/
+@media(max-width: 480px) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .simple_calculator {
+        max-width: 240px;
+    }
+
+    #result {
+        font-size: 2rem;
+        padding: 5px;
+    }
+
+    .button {
+        font-size: 2rem;
+        height: 55px;
+        margin: 1px;
+        width: 56px;
+    }
+
+    .button_calculate .button {
+        height: 115px;
+    }
+
+    .button_zero .button {
+        width: 116px;
+    }
+}
