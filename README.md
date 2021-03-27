@@ -5,9 +5,11 @@ Tecnologias utilizadas:
 - [x] CSS3
 - [x] Javascript
 
+# preview
+
 https://renatamoss.github.io/simple_calculator/index.html
 
-![figure_calculator](https://user-images.githubusercontent.com/71418589/112731455-150a9680-8f16-11eb-9efd-8737a0cf9b74.png)
+
 
 
 
