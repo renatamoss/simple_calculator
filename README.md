@@ -1,6 +1,6 @@
 # simple_calculator
 Projeto de uma calculadora simples. <br>
-Tecnologia utilizadas: 
+Tecnologias utilizadas: 
 - [x] HTML5
 - [x] CSS3
 - [x] Javascript
